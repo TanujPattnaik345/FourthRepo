@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Library>
+  <Literature>
+    <LB1>
+      <BookName>Atomic habits</BookName>
+      <Author>Harper Lee</Author>
+      <YearOfPublication>11 July 1960</YearOfPublication>
+      <Publisher>J. B. Lippincott &amp; Co.</Publisher>
+    </LB1>
+    <LB2>
+      <BookName>Leo tolstoy</BookName>
+      <Author>Paulo Coelho</Author>
+      <YearOfPublication>1988</YearOfPublication>
+      <Publisher>HarperTorch </Publisher>
+    </LB2>
+  </Literature>
+  <Historical>
+    <HB1>
+      <BookName>The Golden period</BookName>
+      <Author>Amartya Sen</Author>
+      <YearOfPublication>2 June 2005</YearOfPublication>
+      <Publisher>Allen Lane</Publisher>
+    </HB1>
+    <HB2>
+      <BookName>The Discovery of India</BookName>
+      <Author>Jawaharlal Nehru</Author>
+      <YearOfPublication>1946</YearOfPublication>
+      <Publisher>John Day (US), Meridian Books </Publisher>
+    </HB2>
+  </Historical>
+  <Current_Affairs>
+    <CA1>
+      <BookName>Current Affairs Yearly  2021</BookName>
+      <Author>Arihant Experts</Author>
+      <YearofPublication>18 January 2021</YearofPublication>
+      <Publisher>Arihant Publication</Publisher>
+    </CA1>
+    <CA2>
+      <BookName>General Knowledge 2021</BookName>
+      <Author>Manohar Pandey</Author>
+      <YearofPublication>2 January 2020</YearofPublication>
+      <Publisher>Arihant Publication</Publisher>
+    </CA2>
+  </Current_Affairs>
+  <Science>
+    <Sc1>
+      <BookName>Albert Einstein</BookName>
+      <Author>Walter Issacson</Author>
+      <YearOfPublication>1988</YearOfPublication>
+      <Publisher>	Bantam Dell Publishing Group</Publisher>
+    </Sc1>
+    <Sc2>
+      <BookName>A Short History of Nearly Everything</BookName>
+      <Author>Bill Bryson</Author>
+      <YearOfPublication> 4 February 2003</YearOfPublication>
+      <Publisher>Broadway Books </Publisher>
+    </Sc2>
+  </Science>
+</Library>
