@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+<employee id='1'>
+<first_name>Biswanath</first_name>
+<last_name>Sahoo</last_name>
+<date_of_joining>
+<day>14</day>
+<month>8</month>
+<year>2022</year>
+</date_of_joining>
+<Department role="Network Admin">Networking</Department>
+</employee>
+<employee id='100'>
+<first_name>Sudipta</first_name>
+<last_name>patra</last_name>
+<date_of_joining>
+<day>18</day>
+<month>8</month>
+<year>2022</year>
+</date_of_joining>
+<Department role="Manager">Software</Department>
+</employee>
+<employee id='101'>
+<first_name>Tanuj </first_name>
+<last_name>Pattnaik</last_name>
+<date_of_joining>
+<day>10</day>
+<month>8</month>
+<year>2022</year>
+</date_of_joining>
+<Department role="Enginnering">CSE</Department>
+</employee>
+
+</employees>

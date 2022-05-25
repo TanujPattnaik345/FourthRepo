@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+    <title>REGISTRATION FORM</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(45deg, rgb(50, 107, 126)35%, rgba(255, 255, 255, 0.75)50%, rgb(81, 150, 173),rgb(81, 150, 173));
+        background-repeat: no-repeat;
+    }
+
+    table {
+        background-color: rgb(62, 105, 105);
+        box-shadow: 4px 4px 3px #f0f0f0,
+            4px 4px 3px #f0f0f0,
+            -5px -6px 3px #f0e6e6,
+            6px 6px 3px #d19c9c;
+    }
+
+    tr {
+        color: beige;
+    }
+    h1{
+        color: rgb(248, 25, 73);
+        text-shadow: 3px 2px white,
+                     4px 3px #f0f0f0;
+    }
+    td{
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    input {
+        box-sizing: border-box;
+        padding: 3px 6px 3px 10px;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    .abc{
+        margin-left: 45px;
+    }
+
+    .opt {
+        border-bottom: 2px solid rgb(59, 57, 57);
+        background-color: rgb(152, 152, 182);
+    }
+    .btn_1{
+        position: relative;
+        display: block;
+        margin-bottom: 1rem;
+        width: 20%;
+        height: 40px;
+        background-image: linear-gradient(30deg,rgb(233, 45, 46),rgb(238, 230, 230),rgb(223, 45, 46));
+        background-repeat: no-repeat;
+        transition: background-image 5s ease-in-out ;
+        box-shadow: 2px 2px 4px #f0f0f0;
+        z-index: 1;
+      
+
+    }
+    .btn_2{
+        position: relative;
+        display: block;
+        margin-bottom: 1rem;
+        width: 20%;
+        height: 40px;
+        background-image: linear-gradient(30deg,rgb(216, 40, 40),rgb(248, 234, 234),rgb(236, 37, 37));
+        background-repeat: no-repeat;
+        transition: background-image 5s ease-in-out ;
+        box-shadow: 2px 2px 4px #f0f0f0;
+        z-index: 1;
+    }
+    .btn_1:hover{
+        background-image: linear-gradient(30deg,rgb(107, 0, 0),rgb(248, 234, 234),rgb(109, 2, 2));
+    }
+     .btn_2:hover{
+        background-image: linear-gradient(30deg,rgb(107, 0, 0),rgb(248, 234, 234),rgb(109, 2, 2));
+    }
+    .btn_1:active{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 23px;
+    }
+     .btn_2:active{
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 23px;
+    }
+
+</style>
+
+<body>
+    <form>
+        <fieldset>
+            <legend align="center">
+                <h1>Registration Form</h1>
+            </legend>
+            <center>
+                <table>
+                    <tr>
+                        <td>Name: <input type="text" id="name" placeholder="Enter Name"><br></td>
+                    </tr>
+                    <tr>
+                        <td><br>Email: <input type="text" id="email" placeholder="xyz@abc.com"><br></td>
+                    </tr>
+                    <tr>
+                        <td><br>Enter your registered phone number:<br><input type="number" value="+91 " maxlength="14" class="abc">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br>Gender: <input type="radio" name="gender" id="male" />Male <input type="radio"
+                                name="gender" id="female" />Female</td>
+                    </tr>
+                    <tr>
+                        <td><br>Date of Birth: <input type="date" placeholder="MM-DD-YY"></td>
+                    </tr>
+                    <tr>
+                        <td><br>Address: <textarea id="address" placeholder="Enter your address" size="30"
+                                maxlength="100"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><br>Recent Qualification:
+                            <select class="opt">
+                                <option class="opt">Select an option</option>
+                                <option class="opt">MCA</option>
+                                <option class="opt">MSc</option>
+                                <option class="opt">MTech</option>
+                                <option class="opt">Btech</option>
+                                <option class="opt">BCA</option>
+                                <option class="opt">BArch</option>
+                                <option class="opt">Bsc</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br>Enter Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="pass"
+                                placeholder="Min 8 chars" minlength="8"><br></td>
+                    </tr>
+                    <tr>
+                        <td><br>Confirm Password: <input type="password" id="confirmpass" placeholder="Min 8 chars"
+                                minlength="8"><br></td>
+                    </tr>
+                </table>
+                <br>
+                <button type="button" class="btn_1">Register</button>
+                <button type="button" class="btn_2" >Reset</button>
+            </center>
+        </fieldset>
+    </form>
+</body>

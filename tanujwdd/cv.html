@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CURRICULUM VITAE </title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(45deg, rgb(151, 165, 240), rgb(205, 140, 51), rgb(210, 117, 190));
+    }
+
+    table {
+        margin: auto auto;
+    }
+
+    h1,
+    h2 {
+        border: 2px solid brown;
+        box-shadow: 2px 3px 4px rgb(152, 104, 214);
+        background-color: rgb(122, 122, 236);
+        width: 85%;
+        margin: 16px 2px 18px 58px;
+        border-radius: 25px;
+        font-family:sans-serif;
+    }
+
+    h2 {
+        height: 35px;
+    }
+
+    textarea {
+        border-radius: 5px;
+        background-color: rgba(197, 112, 197, 0.808)
+    }
+
+    select {
+        background-color: rgb(175, 206, 141);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    option {
+        background-color: rgb(70, 184, 178);
+    }
+
+    button {
+        display: block;
+        margin: auto auto;
+        border: 2px outset green;
+        border-radius: 12px;
+        background-color: rgb(175, 206, 141);
+        padding: 2px 4px;
+        width: 100px;
+        height: 25px;
+        font-family: cursive;
+    }
+
+    button:hover {
+        background-color: lightblue;
+    }
+
+    input {
+        border: 2px solid greenyellow;
+        border-radius: 23px;
+        background-color: rgb(173, 192, 216);
+    }
+
+    tr td {
+        border: 2px solid rgb(255, 67, 67);
+        font-size: 15px;
+        box-shadow: 2px 3px 4px rgb(167, 84, 84);
+    }
+
+    th {
+        text-decoration: underline overline;
+        color: rgb(29, 8, 77);
+        font-style: italic;
+        background-color:rgb(250, 232, 128)
+        
+    }
+</style>
+
+<body>
+    <h1 align="center"> Curriculum Vitae</h1>
+    <form>
+        <table id="1st">
+            <tr>
+                <td><b>First Name: </b><input type="name" placeholder="First Name" /></td>
+                <td><b>Last Name: </b><input type="name" placeholder="Last Name" /></td>
+            </tr>
+            <tr>
+                <td><b>Gender: </b><input type="radio" name="gender" id="male" />Male <input type="radio" name="gender"
+                        id="female" />Female</td>
+            </tr>
+            <tr>
+                <td><b>Address: </b><textarea id="address" placeholder="Enter your address" size="30"
+                        maxlength="100"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Highest Qualification: </b>
+                    <select id="qual">
+                        <option>Btech</option>
+                        <option>Mtech</option>
+                        <option>MCA</option>
+                        <option>MSc</option>
+                        <option>BSc</option>
+                    </select>
+                </td>
+            <tr>
+                <td><b>University: </b><input type="textbox" placeholder="University" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td><b>College Name: </b><input type="textbox" placeholder="College Name" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td><b>Email: </b><input type="text" placeholder="Email Address"></td>
+            </tr>
+            <tr>
+                <td><b>Contact: </b><input type="text" placeholder="Contact" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><b>Date of Birth: </b><input type="date" placeholder="MM-DD-YY"></td>
+            </tr>
+        </table>
+
+        <h2 align="center"><u>Educational Details</u></h2>
+
+        <table border="2px" id="2nd">
+            <th><b>Qualification</b></th>
+            <th><b>Name of Institution</b></th>
+            <th><b>Board</b></th>
+            <th><b>Percentage</b></th>
+            <th><b>Year of Passing</b></th>
+            <tr>
+                <td>Degree
+                    <select>
+                        <option>Btech</option>
+                        <option>Mtech</option>
+                        <option>MCA</option>
+                        <option>MSc</option>
+                        <option>BSc</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="Name of Institution" /></td>
+                <td><input type="text" placeholder="University" /></td>
+                <td><input type="text" placeholder="% secured" /></td>
+                <td><input type="month" placeholder="Year" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="12th Standard" /></td>
+                <td><input type="text" placeholder="Name of Institution" /></td>
+                <td>
+                    <select>
+                        <option>CBSE</option>
+                        <option>ICSE</option>
+                        <option>CHSE</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="% secured" /></td>
+                <td><input type="month" placeholder="Year" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="10th Standard" /></td>
+                <td><input type="text" placeholder="Name of Institution" /></td>
+                <td>
+                    <select>
+                        <option>CBSE</option>
+                        <option>ICSE</option>
+                        <option>CHSE</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="% secured" /></td>
+                <td><input type="month" placeholder="Year" /></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table id="3rd">
+            <td><b>Interest/Hobbies:</b></td>
+            <td><textarea id="hobby" placeholder="Hobbies"></textarea></td>
+        </table>
+        <button type="submit">Submit</button>
+        <br>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

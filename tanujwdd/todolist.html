@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <script src="main1.js" defer></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-image:linear-gradient(135deg,rgb(221, 153, 26),white,rgba(0,255,255,0.6),rgb(99, 156, 13));
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        border: 2px dashed rgb(209, 0, 0);
+        border-radius: 15px;
+        transition: all 0.2s;
+    }
+    h1:hover{
+        border-color: rgb(245, 57, 24);
+        transform: scaleY(1.5);
+    }
+
+    #app {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .note {
+        height: 200px;
+        box-sizing: border-box;
+        padding: 16px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 7px 8px rgba(0, 0, 0, 0.15);
+        resize: none;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    .add-note 
+    {
+        height:200px;
+        border: 2px solid greenyellow;
+        outline: none;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 11px;
+        font-size: 120px;
+        color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: background 0.3s;
+
+    }
+    .add-note:hover{
+        background: rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<body>
+    <h1>Sticky Notes</h1>
+    <div id="app">
+     <button class="add-note" type="button">+</button>
+    </div>
+
+</body>
+
+</html>

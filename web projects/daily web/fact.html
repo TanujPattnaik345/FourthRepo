@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>factorial of a number</h1>
+    <h2>Enter the any number</h2>
+    <input type="number" id="tool1"><br><br>
+    <button type="button" id="result" onclick="myfact()">Answer</button><br><br>
+    <input type="number" id="tool2">
+    <script>
+        function myfact()
+        {
+            var a=document.getElementById('tool1').value;
+
+            var fact=1;
+            for(var i=1;i<=a;i++)
+            {
+
+             fact=fact*i;
+
+            }
+            console.log(fact);
+            // alert(fact);
+            document.getElementById('tool2').value=fact;
+           
+        }
+    </script>
+</body>
+</html>

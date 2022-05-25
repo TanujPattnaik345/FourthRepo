@@ -1,0 +1,23 @@
+<html>
+<head>
+<script language="javascript">
+var xmlObject,docObject,fname,lname,dateofjoining;
+xmlObject=new XMLHttpRequest();
+xmlObject.open("GET","employee.xml",false);
+xmlObject.send();
+docObject=xmlObject.responseXML;
+employeesArray=docObject.getElementsByTagName("employee");
+for(counter=0;counter<employeesArray.length;counter++)
+{
+fname=docObject.getElementsByTagName("first_name")[counter].childNodes[0].nodeValue;
+lname=docObject.getElementsByTagName("last_name")[counter].childNodes[0].nodeValue;
+document.write("<b>Name = </b>"+" "+fname+" "+lname+"<br/>");
+role=docObject.getElementsByTagName("Department")[counter].getAttribute("role");
+Department=docObject.getElementsByTagName("Department")[counter].childNodes[0].nodeValue;
+document.write("<b>Position =</b>" +role+"   in   "+ Department + "<hr>");
+}
+</script>
+</head>
+<body>
+</body>
+</html>

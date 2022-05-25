@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reg Form</title>
+    <style type="text/css">
+        h1{
+            margin-bottom: 50px;
+        }
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          background-color: rgb(26, 60, 124);
+            background-repeat: repeat-y;
+            height: 100vh;
+        }
+
+        input[type="text"] {
+            width: 290px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 19px;
+            border-radius: 9px;
+        }
+
+        input[type="textarea"] {
+            font-size: 13px;
+            font-family: cursive;
+            border-radius: 9px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 77px;
+            height: 27px;
+            position: relative;
+            left: 220px;
+            border-radius: 5px;
+
+        }
+
+        input[type="reset"] {
+            top: 15px;
+        }
+
+        form {
+            text-align: center;
+            font-family: Calibri;
+            background-color: rgb(96, 96, 216);
+            font-size: 20px;
+            border: 3px inset black;
+            width: 600px;
+            height: 600px;
+            margin: 20px auto;
+            box-shadow:  2px 2px 3px rgb(31, 29, 29),
+                    3px 3px 3px  rgb(41, 39, 39),
+                    5px 5px 4px #2f2d2d,
+                    6px 6px 4px #383636,
+                    7px 7px 4px #5d5c5c,
+                    8px 8px 4px #726e6e,
+                    9px 9px 4px #cfcfcf;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            text-align: justify;
+        }
+
+        td:last-child {
+            text-align: left;
+        }
+    </style>
+    <script>
+        function validate() {
+            let fname = document.reg_form.fname;
+            let lname = document.reg_form.lname;
+            let address = document.reg_form.address;
+            let email = document.reg_form.email;
+            let extent = document.reg_form.extent;
+            let mobile = document.reg_form.mobile;
+            let course = document.reg_form.course;
+
+            if (fname.value.length <= 0&&!/^[A-Za-z]*$/g.test(fname)) {
+                alert("Name is valid required");
+                fname.focus();
+                return false;
+            }
+            if (lname.value.length <= 0) {
+                alert("Last Name is required");
+                lname.focus();
+                return false;
+            }
+            if (address.value.length <= 0) {
+                alert("Address is required");
+                address.focus();
+                return false;
+            }
+            var x = document.reg_form.email.value;
+            var atposition = x.indexOf("@");
+            var dotposition = x.lastIndexOf(".");
+            if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+                alert("Please enter a valid e-mail address \n atpostion:" + atposition + "\n dotposition:" + dotposition);
+                return false;
+            }
+            if (extent.value == "select") {
+                alert("select the extension");
+                extent.focus();
+                return false;
+            }
+
+            if (mobile.value.length > 10 || mobile.value.length < 10) {
+                alert("Mobile number is invalid");
+                mobile.focus();
+                return false;
+            }
+            if (course.value == "select course") {
+                alert("Course is required");
+                course.focus();
+                return false;
+            }
+            return false;
+        }    
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Form Validation using JavaScript</h1>
+    </center>
+    <form name="reg_form" onsubmit="validate()">
+        <h2>Registration Validation Form</h2>
+        <table>
+            <tr>
+                <td><label>First Name: </label></td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Last Name: </label></td>
+                <td>
+                    <input type="text" name="lname" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Address: </label></td>
+                <td>
+                    <input type="textarea" size="50" name="address" placeholder="Address">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email Id: </label></td>
+                <td>
+                    <input type="text" name="email" placeholder="example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Extension Number: </label></td>
+                <td>
+                    <select name="extent">
+                        <option value="select">select</option>
+                        <option value="+91">+91</option>
+                        <option value="+92">+92</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Mobile: </label></td>
+                <td>
+                    <input type="number" name="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Course: </label></td>
+                <td>
+                    <select name="course">
+                        <option value="select course">select course</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JAVASCRIPT</option>
+                        <option value="C++">C++</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

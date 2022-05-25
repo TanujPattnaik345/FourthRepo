@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .name{
+        -webkit-text-fill-color: blue;
+    }
+</style>
+<body>
+    <button onclick="clearInterval(clock)"> click me</button>
+    <p id="soclock" class="name"> </p>
+    <script>
+        var clock=setInterval(clocktiming,1000);
+        function clocktiming()
+        {
+
+        var d=new Date();
+        var thapa= d.toLocaleTimeString();
+        document.getElementById('soclock').innerHTML=thapa;
+        }
+        var e=new Date();
+        var f=e.getDay()+1;
+        document.write(f);
+    </script>
+</body>
+</html>
